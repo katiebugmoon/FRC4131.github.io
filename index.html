@@ -3,52 +3,54 @@
 <title>Iron Patriots</title>
 <style>
 body{margin: 0px;}
-nav{
+.header{
 	width:100%;
 	height:20px;
 	background:blue;
 	background-color:blue;
 	float:both;
 }
-a.header{text-decoration:none; color: white;}
-a.header:hover{background-color:#00AA00;}
-a.header:active{background-color:#AAAAAA;}
 div.content{
-	width: 100%;
-	height: calc(100% - 20px);
+	width:100%;
+	height:calc(100% - 20px);
 }
-div.sidebar{
-	width:100px;
+.sidebar{
+	width:120px;
     height:100%;
 	background-color:blue;
-	color: white;
     float:left;
+	padding-left:10px;
 }
+a.sitelink{
+	text-decoration:none;
+	color:white;
+}
+a.sitelink:hover{background-color:#00AA00;}
+a.sitelink:active{background-color:#AAAAAA;}
 div.frame{
 	width:auto;
     height:100%;
     overflow:hidden;
 }
-</style><!--If the header height changes, make sure to change the value in the nav's height and the calc.-->
+</style><!--If the header height changes, make sure to change the value in the nav's height and the calc. Sidebar width is just the one place.-->
 </head>
 <body>
-<nav><center>
-	<a class="header" href="home.html" target="page-frame">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-	<a class="header" href="blog.html" target="page-frame">Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;
-	<a class="header" href="libertyrobotics.html" target="page-frame">What is Liberty Robotics?</a>&nbsp;&nbsp;&nbsp;&nbsp;
-	<a class="header" href="contact.html" target="page-frame">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
-	<a class="header" href="https://github.com/LibertyHighSchoolRobotics/2014-Summer-Fall-Pictures-and-Videos-" target="_blank">Media</a>&nbsp;&nbsp;&nbsp;&nbsp;
-	<a class="header" href="sponsorship.html" target="page-frame">Sponsors</a>&nbsp;&nbsp;&nbsp;&nbsp;
-	<!--<a class="header" href="Resources.html" target="content">Resources</a>&nbsp;&nbsp;&nbsp;&nbsp;-->
-	<a class="header" href="http://www.youtube.com/channel/UC4yU-32WIU4Czi8nTdSphrQ" target="_blank">YouTube</a>
-</center></nav>
+<div class="header">
+	<!--Insert header stuff here-->
+</div>
 <div class="content">
 	<div class="sidebar">
-		Sidebar
+		<a class="sitelink" href="home.html" target="page-frame">Home</a><br>
+		<a class="sitelink" href="blog.html" target="page-frame">Blog</a><br>
+		<a class="sitelink" href="libertyrobotics.html" target="page-frame">What is Liberty Robotics?</a><br>
+		<a class="sitelink" href="contact.html" target="page-frame">Contact Us</a><br>
+		<a class="sitelink" href="https://github.com/LibertyHighSchoolRobotics/Media2014" target="_blank">Media</a><br>
+		<a class="sitelink" href="sponsorship.html" target="page-frame">Sponsors</a><br>
+		<a class="sitelink" href="http://www.youtube.com/channel/UC4yU-32WIU4Czi8nTdSphrQ" target="_blank">YouTube</a>
 	</div>
+	
 	<div class="frame">
 		<iframe id="page-frame" name="page-frame" src="home.html" style="width:100%; height:100%;" />
-		</div>
 	</div>
 </div>
 </body>
