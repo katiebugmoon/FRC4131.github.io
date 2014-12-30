@@ -1,4 +1,0 @@
-LibertyHighSchoolRobotics.github.io
-===================================
-
-Website

@@ -1,0 +1,25 @@
+body{margin:0px;}
+a, a:visited{
+	color:black;
+	text-decoration:none;
+	font-style:normal;
+}
+a:hover{
+	font-style:oblique;
+}
+a.sitelink{
+	display:block;
+	text-decoration:none;
+	font-style:normal;
+	color:white;
+	padding-left:10px;
+	width:calc(100% - 10px);
+	height:2em;
+	background:blue;
+}
+a.sitelink:hover{
+	background:green;
+}
+a.sitelink:active{
+	background:gray;
+}
