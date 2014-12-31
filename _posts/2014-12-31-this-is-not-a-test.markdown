@@ -3,7 +3,7 @@ layout: page
 title: This is NOT a Test
 date: 2014-12-31
 ---
-Post III of the day. First two are [here](/posts/14/31/12/this-is-a-test) and [here](/posts/14/31/12/this-is-another-test).
+Post III of the day. First two are [here](/posts/2014/31/12/this-is-a-test) and [here](/posts/2014/31/12/this-is-another-test).
 
 For the first time today, this post is NOT a test! I've actually got things up and running to the point that I think it officially works.
 
