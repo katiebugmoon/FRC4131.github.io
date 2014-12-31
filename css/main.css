@@ -2,10 +2,10 @@ body{margin:0px;}
 a, a:visited{
 	color:black;
 	text-decoration:none;
-	font-style:normal;
+	font-style:italic;
 }
-a:hover{
-	font-style:oblique;
+a:hover, a:active{
+	color:blue;
 }
 a.sitelink{
 	display:block;
