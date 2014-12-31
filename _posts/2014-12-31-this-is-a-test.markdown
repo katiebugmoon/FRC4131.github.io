@@ -1,7 +1,7 @@
 ---
 layout: page
 title: This is a Test
-date: 12/31/14
+date: 2014-12-31
 ---
 Let's see about having a blog, shall we? The whole point of reconstructing the entire site using Jekyll in the first place was to have an easy
 way to create blog posts.
