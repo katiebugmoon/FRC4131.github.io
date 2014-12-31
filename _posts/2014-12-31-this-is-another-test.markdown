@@ -1,7 +1,7 @@
 ---
 layout: page
 title: This is Another Test
-date: 12/31/14
+date: 2014-12-31
 ---
 This is the second post I have made today. The first is [here](/posts/14/12/31/this-is-a-test).
 
