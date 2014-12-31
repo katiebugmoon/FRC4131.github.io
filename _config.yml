@@ -1,6 +1,6 @@
 # Site settings
 title: The Iron Patriots
-email:
+email: ironpatriots4131@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   The Iron Patriots are FRC team 4131 out of Liberty High School in the Issaquah School District.
 baseurl: "" # the subpath of your site, e.g. /blog/
