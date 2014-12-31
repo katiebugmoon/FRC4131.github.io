@@ -1,7 +1,7 @@
 ---
 layout: page
 title: This is the Final Test
-date: 2014-31-12
+date: 2014-12-31
 ---
 I said it, and I mean it. This is the absolutely, completely, totally <b>FINAL</b> test of the blog. It will probably also be the final post today.
 
