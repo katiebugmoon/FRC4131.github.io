@@ -23,3 +23,10 @@ a.sitelink:hover{
 a.sitelink:active{
 	background:gray;
 }
+.post-title{
+	font-weight:bold;
+}
+.post-meta{
+	font-style:italic;
+	color:gray;
+}
