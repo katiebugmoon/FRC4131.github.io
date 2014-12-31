@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: base
 title: Blog
 ---
-<p>This is still a work in progress. Not intended for use.</p>
+<h1>Recent Posts<h1>
 <ul style="list-style:none;">
 {% for post in site.posts %}
 	<li><a href="{{ post.url | remove:'.html' }}" style="post-title">{{ post.title }}</a>
