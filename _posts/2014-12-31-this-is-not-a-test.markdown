@@ -7,7 +7,7 @@ Post III of the day. First two are [here](/2014/12/31/this-is-a-test) and [here]
 
 For the first time today, this post is NOT a test! I've actually got things up and running to the point that I think it officially works.
 
-The issues I was having [earlier](/14/12/31/this-is-another-test) were because of a page build failure. I went to my email and found five
+The issues I was having [earlier](/2014/12/31/this-is-another-test) were because of a page build failure. I went to my email and found five
 messages titled "Page build failure" in my inbox. That explained things.
 
 Note to anyone reading this: when you create a Jekyll post, in the front matter, always make sure the date is in `YYYY-MM-DD` format. Otherwise,

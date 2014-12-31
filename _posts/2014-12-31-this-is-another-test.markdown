@@ -3,7 +3,7 @@ layout: page
 title: This is Another Test
 date: 2014-12-31
 ---
-This is the second post I have made today. The first is [here](/posts/2014/12/31/this-is-a-test).
+This is the second post I have made today. The first is [here](/2014/12/31/this-is-a-test).
 
 As you can see with the first post, I'm having trouble getting Jekyll to cooperate.
 
