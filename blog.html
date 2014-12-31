@@ -3,3 +3,8 @@ layout: page
 title: Blog
 ---
 <p>This is still a work in progress. Not intended for use.</p>
+<ul>
+{% for post in site.posts %}
+	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
