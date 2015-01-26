@@ -4,3 +4,5 @@ title: Web Post
 date: 2015-01-25
 ---
 This is a final test that you can write posts from the web.
+Edit: this is the proof that you can write a post from the web. Just like Wordpress.
+Unlike Wordpress, anyone with a Github account that's part of the club (everyone in the club) can edit or make new posts from the web.
