@@ -14,7 +14,7 @@ a.sitelink{
 	color:white;
 	padding-left:10px;
 	width:calc(100% - 10px);
-	height:2em;
+	padding-bottom:1em;
 	background:blue;
 }
 a.sitelink:hover{
