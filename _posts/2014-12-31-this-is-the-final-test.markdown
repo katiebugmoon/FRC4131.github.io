@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: This is the Final Test
 date: 2014-12-31
 ---

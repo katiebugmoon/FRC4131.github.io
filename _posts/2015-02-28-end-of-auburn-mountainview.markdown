@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: End of Auburn Mountainview
 date: 2015-02-28
 ---
