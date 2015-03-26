@@ -24,7 +24,7 @@ a.sitelink:active{
 	background:gray;
 }
 .post-title{
-	font-style:normal;/*Counteract links being italicized
+	font-style:normal;/*Counteract links being italicized*/
 }
 .post-meta{
 	color:gray;
