@@ -24,10 +24,9 @@ a.sitelink:active{
 	background:gray;
 }
 .post-title{
-	font-weight:bold;
+	font-style:normal;
 }
 .post-meta{
-	font-style:italic;
 	color:gray;
 	padding-left:5px;
 }
