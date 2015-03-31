@@ -32,4 +32,5 @@ a.sitelink:active{
 }
 ol, ul{margin-left:20px;}/*shift right*/
 table{border-collapse:collapse;}/*Collapse cell and table borders into one*/
-table, tr, td{border:1px solid black;}
+table, thead, tfoot, tr, th, td{border:1px solid black;}
+th, td{padding:10px;}
