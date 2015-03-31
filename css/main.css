@@ -30,6 +30,6 @@ a.sitelink:active{
 	color:gray;
 	padding-left:5px;
 }
-ol, ul{
-	margin-left:20px; shift right
-}
+ol, ul{margin-left:20px;}/*shift right*/
+table{border-collapse:collapse;}/*Collapse cell and table borders into one*/
+table, tr, td{border:1px solid black;}
