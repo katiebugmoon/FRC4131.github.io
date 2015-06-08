@@ -2,6 +2,7 @@
 layout: post
 title: End of Shorewood
 date: 2015-03-22
+author: Ian Weiss
 ---
 This post marks the end of the Shorewood FRC competition. We ended in 21st, six places higher than our first competition, but still not high as we expected or needed. We were not picked for alliance selections, and set as 3<sup>rd</sup> alternate for the alliance matches. We didn't stick around.
 
