@@ -9,4 +9,5 @@ $(document).ready(function(){
     }
     table.append(row);
   }
+  $("#main").attr("src", "img0.jpg");
 });
