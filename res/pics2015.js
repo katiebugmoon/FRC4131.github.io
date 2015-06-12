@@ -1,12 +1,13 @@
-var NUM_IMAGES = 7;
 var ALPHA_HIGH = 1.0, ALPHA_MEDIUM = 0.7, ALPHA_LOW = 0.4;
+var NUM_IMAGES = 7;
+var captions = ["Caught Alex by surprise!", "Sydney was heads-down with business cards all day.", "A prototype for the new driver station.", "Austin was CAD'ing it up.", "The Jacobsons work on field elements.", "Jill and Emily were essential to maintaining morale through build season.", "Ian and Doug review ideas for the robot."];
 $(document).ready(function(){
   var table = $("#link-table");
   for(var i=0;i<NUM_IMAGES;){
     var start=i;
     var row = $("<tr></tr>");
     for(;(i-start)<10 && i<NUM_IMAGES;i++){
-      var img = $("<img src='img" + i + ".jpg'/>");
+      var img = $("<img src='img" + i + ".jpg' data-index='" + i + "'/>");
       img.click(function(){
         fadeOut($(".selected"));
         fadeIn($(this));
@@ -34,9 +35,10 @@ $(document).ready(function(){
 function fadeIn(img){
   img.toggleClass("selected", true);
   img.fadeTo("slow", ALPHA_HIGH);
-  $("#main").fadeTo("fast", 0, function(){
+  $("#main-wrapper").fadeTo("fast", 0, function(){
 	$("#main").attr("src", img.attr("src"));
-	$("#main").fadeTo("fast", 1);
+	$("#caption").text(captions[parseInt($(".selected").attr("data-index"))]);
+	$("#main-wrapper").fadeTo("fast", 1);
   });
 }
 function fadeOut(img){
