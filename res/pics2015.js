@@ -34,7 +34,10 @@ $(document).ready(function(){
 function fadeIn(img){
   img.toggleClass("selected", true);
   img.fadeTo("slow", ALPHA_HIGH);
-  $("#main").attr("src", img.attr("src"));
+  $("#main").fadeTo("slow", 0, function(){
+	$("#main").attr("src", img.attr("src"));
+	$("#main").fadeTo("slow", 1);
+  });
 }
 function fadeOut(img){
   img.toggleClass("selected", false);
