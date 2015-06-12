@@ -1,5 +1,9 @@
 #main{
   height: 400px;
+  vertical-align: top;
+}
+#main-wrapper *{
+	display: inline;
 }
 #link-table{
   border-collapse: collapse;
