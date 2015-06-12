@@ -15,7 +15,7 @@ a:hover, a:active{
 	padding-left:5px;
 }
 ol, ul{margin-left:20px;}/*shift right*/
-table{border-collapse:collapse;}/*Collapse cell and table borders into one*/
+table{border-collapse:collapse;}
 table, thead, tfoot, tr, th, td{border:1px solid black;}
 th, td{padding:10px;}
 body{
