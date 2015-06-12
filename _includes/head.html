@@ -1,5 +1,12 @@
 <head>
 	<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<link rel="stylesheet" type="text/css" href="/css/main.css"/>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	{% if page.stylesheet %}
+		<link rel="stylesheet" type="text/css" href="/res/{{ page.stylesheet }}.css"/>
+	{% endif %}
+	{% if page.script %}
+		<script type="text/javascript" src="/res/{{ page.script }}.js"></script>
+	{% endif %}
 	{% include icon.html %}
 </head>
