@@ -20,7 +20,6 @@
 	padding-left:10px;
 	width:calc(100% - 10px);
 	padding-bottom:1em;
-	background:blue;
 }
 #sidebar > *:hover{
 	background:green;
