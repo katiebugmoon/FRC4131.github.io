@@ -8,8 +8,11 @@ $(document).ready(function(){
     for(;(i-start)<10 && i<NUM_IMAGES;i++){
       var img = $("<img src='img" + i + ".jpg'/>");
       img.click(function(){
-        $("#link-table img").not(this).fadeTo("slow", ALPHA_LOW);
+        $(".selected").fadeTo("slow", ALPHA_LOW);
+        $(".selected").toggleClass("selected", false);
+        $(this).toggleClass("selected", true);
         $(this).fadeTo("slow", ALPHA_HIGH);
+        $("#main").attr("src", $(this).attr("src"));
       });
       var cell = $("<td></td>");
       cell.append(img);
