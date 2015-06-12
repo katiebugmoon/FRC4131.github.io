@@ -10,7 +10,7 @@ $(document).ready(function(){
 		var start=i;
 		var row = $("<tr></tr>");
 		for(;(i-start)<10 && i<NUM_IMAGES;i++){
-			var img = $("<img src='" + srcIcon[i] + "' data-index='" + i + "'/>");
+			var img = $("<td data-index='" + i + "'><img src='" + srcIcon[i] + "'/></td>");
 			img.click(function(){
 				fadeOut($(".selected"));
 				fadeIn($(this));
@@ -20,18 +20,14 @@ $(document).ready(function(){
 					$(this).fadeTo("slow", ALPHA_MEDIUM);
 			});
 			img.mouseleave(function(){
-				if($(this).hasClass("selected"))
-					$(this).fadeTo("slow", ALPHA_HIGH);
-				else
+				if(!$(this).hasClass("selected"))
 					$(this).fadeTo("slow", ALPHA_LOW);
 			});
-			var cell = $("<td></td>");
-			cell.append(img);
-			row.append(cell);
+			row.append(img);
 		}
 		table.append(row);
 	}
-	var imgs = $("#link-table img"), first = imgs.first();
+	var imgs = $("#link-table td"), first = imgs.first();
 	fadeOut(imgs.not(first));
 	fadeIn(first);
 });
@@ -39,7 +35,7 @@ function fadeIn(img){
 	img.toggleClass("selected", true);
 	img.fadeTo("slow", ALPHA_HIGH);
 	$("#main-wrapper").fadeTo("fast", 0, function(){
-		var ind = parseInt($(".selected").attr("data-index"));
+		var ind = parseInt(img.attr("data-index"));
 		var src = srcMain[ind];
 		if($("#main").tagName() == "img"){
 			console.log("img");
