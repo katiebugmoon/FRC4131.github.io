@@ -1,5 +1,5 @@
 var ALPHA_HIGH = 1.0, ALPHA_MEDIUM = 0.7, ALPHA_LOW = 0.4;
-var captions = ["Caught Alex by surprise!", "Sydney was heads-down with business cards all day.", "A prototype for the new driver station.", "Austin was CAD'ing it up.", "The Jacobsons work on field elements.", "Jill and Emily were essential to maintaining morale through build season.", "Ian and Doug review ideas for the robot.", "Click the image to read some quotes from build season.", "This robot was borrowed from the Issaquah Robotics Society so we could test out a robot with Mecanum drive. This was the first year we tried using Mecanum drive, and it was because of the success we had with this robot.", "A time-lapse of build season day 8.", "A time-lapse of build season day 9."];
+var captions = ["Caught Alex by surprise!", "Sydney was heads-down with business cards all day.", "A prototype for the new driver station.", "Austin was CAD'ing it up.", "The Jacobsons work on field elements.", "Jill and Emily were essential to maintaining morale through build season.", "Ian and Doug review ideas for the robot.", "Click the image to read some quotes from build season.", "The first robot in this video was borrowed from Issaquah Robotics Society to test out Mecanum wheels. We decided to use Mecanum wheels this year, the first year we have, because of the success we had with this base.<br/>The second robot is the stock base provided in the Kit of Parts. As shown, this robot can't even drive over the scoring platform without getting stuck.", "A time-lapse of build season day 8.", "A time-lapse of build season day 9."];
 var srcIcon = ["img0.jpg", "img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg", "img6.jpg", "img7.jpg", ytIcon("vigERTgk39w"), ytIcon("yslYLHzRTzE"), ytIcon("gdnHLOKniQw")];
 var srcMain = ["img0.jpg", "img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg", "img6.jpg", "img7.jpg", ytEmbed("vigERTgk39w"), ytEmbed("yslYLHzRTzE"), ytEmbed("gdnHLOKniQw")];
 var href = ["img0.jpg", "img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg", "img6.jpg", "../quotes", "", "", ""];//No point to linking videos: clicking just pauses.
@@ -52,7 +52,7 @@ function fadeIn(img){
 		}
 		$("#main").attr("src", src);
 		$("#main-link").attr("href", href[ind]);
-		$("#caption").text(captions[ind]);
+		$("#caption").html(captions[ind]);
 		$("#main-wrapper").fadeTo("fast", 1);
 	});
 }
