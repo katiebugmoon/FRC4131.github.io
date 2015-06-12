@@ -4,14 +4,12 @@
   height:10%;
 }
 #sidebar{
-  background: linear-gradient(90deg, blue 0%, blue 50%, rgba(0,0,1,0) 100%);
   float:left;
   width:100px;
   height:100%;
 }
-#header, #sidebar{
-  color:white;
-}
+#header, #sidebar{color:white;}
+#sidebar, #sidebar *{background: linear-gradient(90deg, blue 0%, blue 60%, rgba(0,0,1,0) 100%);}
 #sidebar > *{
 	display:block;
 	text-decoration:none;
@@ -22,8 +20,8 @@
 	padding-bottom:1em;
 }
 #sidebar > *:hover{
-	background:green;
+  background: linear-gradient(90deg, green 0%, green 60%, rgba(0,0,1,0) 100%);
 }
 #sidebar > *:active{
-	background:gray;
+  background: linear-gradient(90deg, gray 0%, gray 60%, rgba(0,0,1,0) 100%);
 }
