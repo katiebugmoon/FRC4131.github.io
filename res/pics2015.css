@@ -1,17 +1,17 @@
 #main{
-  height: 400px;
-  vertical-align: top;
+	height: 400px;
+	vertical-align: top;
 }
 #main-wrapper{
-  display: inline-block;
-  background-color: white;
-  border: 1px solid black;
-  padding: 20px;
+	display: inline-block;
+	background-color: white;
+	border: 1px solid black;
+	padding: 20px;
 }
 #main-wrapper *{display: inline;}
 #link-table{border-collapse: collapse;}
 #link-table td{border: 1px solid black;}
 #link-table img{
-  max-width: 75px;
-  max-height: 75px;
+	max-width: 75px;
+	max-height: 75px;
 }
