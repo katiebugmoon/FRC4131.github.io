@@ -1,23 +1,23 @@
 <html>
 	{% include head.html %}
 	<body>
-		<div style="background:blue; color:white; width:100%; height:10%;">
+		<div id="header">
 			<img src="/res/img/logo.png" style="height:100%; vertical-align:middle;"/>
 			<h1 style="display:inline; padding-left:20px;">Iron Patriots</h1>
 			<h3 style="display:inline; color:lightgray; float:right;">FRC Team 4131 from Liberty High School</h3>
 		</div>
 		<div style="width:100%; height:90%;">
-			<div style="float:left; background:blue; color:white; width:100px; height:100%;">
-				<a class="sitelink" href="/">Home</a>
-				<a class="sitelink" href="/blog">Blog</a>
-				<a class="sitelink" href="/calendar">Calendar</a>
-				<a class="sitelink" href="/about">About Us</a>
-				<a class="sitelink" href="/first">What is FIRST Robotics?</a>
-				<a class="sitelink" href="/contact">Contact Us</a>
-				<a class="sitelink" href="/media">Media</a>
-				<a class="sitelink" href="/sponsorship">Sponsors</a>
-				<a class="sitelink" href="https://www.youtube.com/channel/UC4yU-32WIU4Czi8nTdSphrQ" target="_blank">YouTube</a>
-				<a class="sitelink" href="https://github.com/FRC4131" target="_blank">Github</a>
+			<div id="sidebar">
+				<a href="/">Home</a>
+				<a href="/blog">Blog</a>
+				<a href="/calendar">Calendar</a>
+				<a href="/about">About Us</a>
+				<a href="/first">What is FIRST Robotics?</a>
+				<a href="/contact">Contact Us</a>
+				<a href="/media">Media</a>
+				<a href="/sponsorship">Sponsors</a>
+				<a href="https://www.youtube.com/channel/UC4yU-32WIU4Czi8nTdSphrQ" target="_blank">YouTube</a>
+				<a href="https://github.com/FRC4131" target="_blank">Github</a>
 			</div>
 			<div style="width:calc(100% - 102px); height:calc(100% - 2px); border:1px solid blue; overflow:scroll;">
 				{{ content }}

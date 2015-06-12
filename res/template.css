@@ -1,0 +1,30 @@
+#header{
+  background:blue;
+  width:100%;
+  height:10%;
+}
+#sidebar{
+  background: linear-gradient(90deg, blue 0%, blue 50%, rgba(0,0,1,0) 100%);
+  float:left;
+  width:100px;
+  height:100%;
+}
+#header, #sidebar{
+  color:white;
+}
+#sidebar > *{
+	display:block;
+	text-decoration:none;
+	font-style:normal;
+	color:white;
+	padding-left:10px;
+	width:calc(100% - 10px);
+	padding-bottom:1em;
+	background:blue;
+}
+#sidebar > *:hover{
+	background:green;
+}
+#sidebar > *:active{
+	background:gray;
+}

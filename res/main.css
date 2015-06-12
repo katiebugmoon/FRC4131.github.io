@@ -7,22 +7,6 @@ a, a:visited{
 a:hover, a:active{
 	color:blue;
 }
-a.sitelink{
-	display:block;
-	text-decoration:none;
-	font-style:normal;
-	color:white;
-	padding-left:10px;
-	width:calc(100% - 10px);
-	padding-bottom:1em;
-	background:blue;
-}
-a.sitelink:hover{
-	background:green;
-}
-a.sitelink:active{
-	background:gray;
-}
 .post-title{
 	font-style:normal;/*Counteract links being italicized*/
 }
