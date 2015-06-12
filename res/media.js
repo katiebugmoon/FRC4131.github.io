@@ -1,6 +1,6 @@
 var ALPHA_HIGH = 1.0, ALPHA_MEDIUM = 0.7, ALPHA_LOW = 0.4;
 var NUM_IMAGES = srcIcon.length;
-$(document).ready(function(){
+$(document).load(function(){
 	var table = $("#link-table");
 	for(var i=0;i<NUM_IMAGES;){
 		var start=i;
