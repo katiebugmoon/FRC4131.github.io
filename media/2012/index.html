@@ -1,17 +1,13 @@
 ---
 layout: media
 title: 2012 Media
+stylesheet: media
+script: media
 ---
-<h2>Videos</h2>
-<div class="video">
-	<h3>Competition Montage</h3>
-	<iframe src="http://player.vimeo.com/video/56535524" width=450 height=400 frameborder=0 webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
-<div class="video">
-	<h3>Best Match at Seattle Regionals</h3>
-	<iframe src="http://www.youtube.com/embed/9ssQBFm6E_E?autoplay=0" width=500 height=400 frameborder=0></iframe>
-</div>
-<div>
-	<h3>Ziptie's First Drive</h3><!--Was this filmed on a potato?-->
-	<iframe src="http://www.youtube.com/embed/QBWInTqydi0?autoplay=0" width=300 height=300 frameborder=0></iframe>
-</div>
+{% include slideshow.html %}
+<script type="text/javascript">
+	var srcIcon = [vimeoIcon("56535524"), ytIcon("9ssQBFm6E_E"), ytIcon("QBWInTqydi0")];
+	var srcMain = [vimeoEmbed("56535524"), ytEmbed("9ssQBFm6E_E"), ytEmbed("QBWInTqydi0")];
+	var href = ["", "", ""];
+	var captions = ["This montage of our 2012 competition was created by Sydney Dybing.", "This was our best match at the Seattle regionals.", "This is the first time our robot, Ziptie, drove."];
+</script>

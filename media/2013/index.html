@@ -1,8 +1,13 @@
 ---
-layout: media
+layout: page
 title: 2013 Media
+stylesheet: media
+script: media
 ---
-<h2>Videos</h2>
-<h3>Disc Shooter</h3>
-<iframe src="http://www.youtube.com/embed/aez_f8ievTc?autoplay=0" width=500 height=500 frameborder=0></iframe>
-<p>More videos for the 2012 and 2013 years can be found <a href="https://www.youtube.com/channel/UC4yU-32WIU4Czi8nTdSphrQ">here</a>.</p>
+{% include slideshow.html %}
+<script type="text/javascript">
+	var srcIcon = [ytIcon("aez_f8ievTc")];
+	var srcMain = [ytEmbed("aez_f8ievTc")];
+	var href = [""];
+	var captions = ["This is prototype of our disc shooter."];
+</script>
