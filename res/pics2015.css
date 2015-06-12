@@ -9,7 +9,7 @@ iframe#main{width: 600px;}
 	border: 1px solid black;
 	padding: 20px;
 }
-#main-wrapper > *{display: inline-block;}
+#main-wrapper > *{display: inline;}
 #link-table{border-collapse: collapse;}
 #link-table td{border: 1px solid black;}
 #link-table img{
