@@ -1,0 +1,15 @@
+#main-wrapper{text-align: center;}
+#main{
+  width: 500px;
+  height: 500px;
+}
+#link-table{
+  border-collapse: collapse;
+}
+#link-table td{
+  border: 1px solid black;
+}
+#link-table img{
+  width: 100px;
+  height: 100px;
+}
