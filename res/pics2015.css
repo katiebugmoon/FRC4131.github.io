@@ -2,6 +2,7 @@
 	height: 400px;
 	vertical-align: top;
 }
+iframe#main{width:600px;}
 #main-wrapper{
 	display: inline-block;
 	background-color: white;
