@@ -7,8 +7,11 @@ function getVimeoIcons(){
 	imgs.each(function(ind, element){
 		var id = $(element).attr("id");
 		var vid = id.substring(6, id.length);
+		console.log("Finding Vimeo thumbnail " + vid);
 		$.getJSON('http://vimeo.com/api/v2/video/' + vid + '.json?callback=?', function(data){
-			$(element).attr("src", data[0].thumbnail_large);
+			var url = data[0].thumbnail_large;
+			console.log("URL=" + url);
+			$(element).attr("src", url);
 		});
 	});
 }
