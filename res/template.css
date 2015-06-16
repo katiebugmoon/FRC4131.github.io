@@ -1,16 +1,20 @@
 #header{
 	background: blue;
 	width: 100%;
-	height: 10%;
 	text-align: center;
 }
+#logo{height: 5em;}
 #sidebar{
 	float: left;
 	width: 100px;
 	height: 100%;
 	background: linear-gradient(90deg, blue 0%, blue 60%, rgba(0,0,1,0) 100%);
 }
-#header, #sidebar{color:white;}
+#title, #sidebar{color:white;}
+#caption{color:#AAA;}
+#title, #caption{
+	font-family: "Source Sans Pro";
+}
 #sidebar > a{
 	color: inherit;
 	display: block;
@@ -23,5 +27,5 @@
 	padding-bottom: 1em;
 	background: transparent;
 }
-#sidebar > *:hover{background: linear-gradient(90deg, green 0%, green 60%, rgba(0,0,1,0) 100%);}
-#sidebar > *:active{background: linear-gradient(90deg, gray 0%, gray 60%, rgba(0,0,1,0) 100%);}
+#sidebar > :hover{background: linear-gradient(90deg, green 0%, green 60%, rgba(0,0,1,0) 100%);}
+#sidebar > :active{background: linear-gradient(90deg, gray 0%, gray 60%, rgba(0,0,1,0) 100%);}
