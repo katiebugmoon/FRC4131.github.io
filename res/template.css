@@ -2,6 +2,7 @@
 	background: blue;
 	width: 100%;
 	text-align: center;
+	background: linear-gradient(180deg, blue 0%, blue 60%, rgba(0,0,1,0) 100%);
 }
 #logo{height: 5em;}
 #sidebar{
@@ -12,9 +13,7 @@
 }
 #title, #sidebar{color:white;}
 #caption{color:#AAA;}
-#title, #caption{
-	font-family: "Source Sans Pro";
-}
+#title, #caption, #sidebar{font-family: "Source Sans Pro";}
 #sidebar > a{
 	color: inherit;
 	display: block;
