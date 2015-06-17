@@ -12,8 +12,8 @@
 	background: linear-gradient(90deg, blue 0%, blue 60%, rgba(0,0,1,0) 100%);
 }
 #title, #sidebar{color:white;}
-#caption{color:#AAA;}
-#title, #caption, #sidebar{font-family: "Source Sans Pro";}
+#tagline{color:#AAA;}
+#title, #tagline, #sidebar{font-family: "Source Sans Pro";}
 #sidebar > a{
 	color: inherit;
 	display: block;
