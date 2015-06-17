@@ -2,14 +2,14 @@
 	background: blue;
 	width: 100%;
 	text-align: center;
-	background: linear-gradient(180deg, blue 0%, blue 60%, rgba(0,0,1,0) 100%);
+	background: blue;
 }
 #logo{height: 5em;}
 #sidebar{
 	float: left;
 	width: 100px;
 	height: 100%;
-	background: linear-gradient(90deg, blue 0%, blue 60%, rgba(0,0,1,0) 100%);
+	background: blue;
 }
 #title, #sidebar{color:white;}
 #tagline{color:#AAA;}
@@ -28,3 +28,11 @@
 }
 #sidebar > :hover{background: linear-gradient(90deg, green 0%, green 60%, rgba(0,0,1,0) 100%);}
 #sidebar > :active{background: linear-gradient(90deg, gray 0%, gray 60%, rgba(0,0,1,0) 100%);}
+#content-wrapper{
+	width:calc(100% - 100px);
+	height:100%;
+	overflow:scroll;
+	padding-left:1em;
+	padding-top: 1em;
+	background: linear-gradient(90deg, blue 0%, transparent 15%, transparent 100%), linear-gradient(180deg, blue 0%, transparent 15%, transparent 100%);
+}
