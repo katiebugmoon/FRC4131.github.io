@@ -26,7 +26,6 @@ $(document).ready(function(){
 	var imgs = $("#link-table td"), first = imgs.first();
 	fadeOut(imgs.not(first));
 	fadeIn(first);
-	getVimeoIcons();
 });
 function fadeIn(img){
 	img.toggleClass("selected", true);
