@@ -1,0 +1,13 @@
+# Site settings
+title: The Iron Patriots
+email: ironpatriots4131@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  The Iron Patriots are FRC team 4131 out of Liberty High School in the Issaquah School District.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://frc4131.github.io" # the base hostname & protocol for your site
+twitter_username:
+github_username: FRC4131
+source: _pages
+
+# Build settings
+markdown: kramdown
