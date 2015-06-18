@@ -1,6 +1,5 @@
 <head>
 	<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-<<<<<<< HEAD
 	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/res/template.css"/>
 	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/res/main.css"/>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' rel='stylesheet' type='text/css'/>
@@ -8,18 +7,5 @@
 	<script type="text/javascript" src="{{ site.baseurl }}/res/util.js"></script>
 	{% if page.stylesheet %}<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/res/{{ page.stylesheet }}.css"/>{% endif %}
 	{% if page.script %}<script type="text/javascript" src="{{ site.baseurl }}/res/{{ page.script }}.js"></script>{% endif %}
-=======
-	<link rel="stylesheet" type="text/css" href="/res/template.css"/>
-	<link rel="stylesheet" type="text/css" href="/res/main.css"/>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="/res/util.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' rel='stylesheet' type='text/css'/>
-	{% if page.stylesheet %}
-		<link rel="stylesheet" type="text/css" href="/res/{{ page.stylesheet }}.css"/>
-	{% endif %}
-	{% if page.script %}
-		<script type="text/javascript" src="/res/{{ page.script }}.js"></script>
-	{% endif %}
->>>>>>> d6f06513a9caed23c301a0a06d8e9b08e560b5e8
 	{% include icon.html %}
 </head>
