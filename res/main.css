@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 ---
 ---
+=======
+>>>>>>> d6f06513a9caed23c301a0a06d8e9b08e560b5e8
 * {margin:0px; padding:0px;}
 a, a:visited{
 	color:black;
@@ -21,6 +24,7 @@ table{border-collapse:collapse;}
 table, thead, tfoot, tr, th, td{border:1px solid black;}
 th, td{padding:10px;}
 body{
+<<<<<<< HEAD
 	background-image: url("{{ site.baseurl }}/res/img/bkg.jpg");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -60,3 +64,9 @@ body{
 	text-align: center;
 	overflow: scroll;
 }
+=======
+	background-image: url("/res/img/bkg.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+>>>>>>> d6f06513a9caed23c301a0a06d8e9b08e560b5e8

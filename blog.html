@@ -1,12 +1,21 @@
 ---
+<<<<<<< HEAD
 layout: page
 title: Blog
 align: left
+=======
+layout: base
+title: Blog
+>>>>>>> d6f06513a9caed23c301a0a06d8e9b08e560b5e8
 ---
 <h1>Recent Posts</h1>
 <ul style="list-style:none;">
 {% for post in site.posts %}
+<<<<<<< HEAD
 	<li><a href="{{ site.baseurl }}/{{ post.url | remove:'.html' }}" class="post-title">{{ post.title }}</a>
+=======
+	<li><a href="{{ post.url | remove:'.html' }}" class="post-title">{{ post.title }}</a>
+>>>>>>> d6f06513a9caed23c301a0a06d8e9b08e560b5e8
 	<span class="post-meta">{{ post.author }} - {{ post.date | date: "%-m/%-d/%y" }}</span></li>
 {% endfor %}
 </ul>
