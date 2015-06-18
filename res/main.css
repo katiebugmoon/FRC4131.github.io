@@ -6,14 +6,10 @@ a, a:visited{
 	text-decoration:none;
 	font-style:italic;
 }
-a:hover, a:active{
-	color:blue;
-}
-.post-title{
-	font-style:normal;/*Counteract links being italicized*/
-}
+a:hover, a:active{color:blue;}
+.post-title{font-style:normal;}/*Counteract links being italicized*/
 .post-meta{
-	color:gray;
+	color:#222;
 	padding-left:5px;
 }
 ol, ul{margin-left:20px;}/*shift right*/
