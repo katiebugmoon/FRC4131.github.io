@@ -1,7 +1,32 @@
----
-layout: base
----
-<center style="margin-left:50px; margin-right:50px;">
-	{% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
-	{{ content }}
-</center>
+<html>
+	{% include head.html %}
+	<body>
+		<div id="header-wrapper">
+			<div id="filler"></div>
+			<div id="header">
+				<img id="logo" src="{{ site.baseurl }}/res/img/logo.png"/>
+				<div id="header-text">
+					<h1 id="title">Iron Patriots</h1>
+					<h3 id="tagline">FRC Team 4131 from Liberty High School</h3>
+				</div>
+			</div>
+		</div>
+		<div id="wrapper">
+			<nav id="sidebar">
+				<a href="{{ site.baseurl }}/">Home</a>
+				<a href="{{ site.baseurl }}/blog">Blog</a>
+				<a href="{{ site.baseurl }}/calendar">Calendar</a>
+				<a href="{{ site.baseurl }}/about">About Us</a>
+				<a href="{{ site.baseurl }}/first">What is FIRST Robotics?</a>
+				<a href="{{ site.baseurl }}/contact">Contact Us</a>
+				<a href="{{ site.baseurl }}/media">Media</a>
+				<a href="{{ site.baseurl }}/sponsorship">Sponsors</a>
+				<a href="https://www.youtube.com/channel/UC4yU-32WIU4Czi8nTdSphrQ" target="_blank">YouTube</a>
+				<a href="https://github.com/{{ site.github_username }}" target="_blank">Github</a>
+			</nav>
+			<div id="content" {% if page.align %}style="text-align:{{ page.align }}"{% endif %}>
+				{{ content }}
+			</div>
+		</div>
+	</body>
+</html>
