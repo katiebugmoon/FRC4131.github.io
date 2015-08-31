@@ -11,7 +11,7 @@ github_username: FRC4131
 source: _pages
 sections:
 - text: Home
-  url: /
+  url: 
   alts: index
 - text: Blog
   url: blog
