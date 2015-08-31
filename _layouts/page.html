@@ -16,7 +16,9 @@
 				{% assign root = page.url | remove_first: '/' | split: '/' | first | remove: '.html' %}{% comment %}Isolate first directory, or file name w/o extension{% endcomment %}
 				<span class="log">Page root = {{ root }}</span>
 				{% for section in site.sections %}
-					<a href="{{ site.baseurl }}{{ section.url }}">{{ section.text }}</a>
+					<span class="log">Section {{ section.url }}</span>
+					{% assign active = false %}
+					<a href="{{ site.baseurl }}{{ section.url }}" {% if active %}class="active"{% endif %}>{{ section.text }}</a>
 				{% endfor %}
 			</nav>
 			<div id="content" {% if page.align %}style="text-align:{{ page.align }}"{% endif %}>
