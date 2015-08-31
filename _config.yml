@@ -12,7 +12,7 @@ source: _pages
 sections:
 - text: Blog
   url: /blog
-  alts: 2014,2015
+  alts: /2014,/2015
 - text: Calendar
   url: /calendar
 - text: About Us

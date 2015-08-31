@@ -13,14 +13,20 @@
 		</div>
 		<div id="wrapper">
 			<nav id="sidebar">
+				<span class="log">page.url = {{ page.url }}</span>
 				{% for section in site.sections %}
 					{% assign active = false %}
+					<span class="log">section.url = {{ section.url }}</span>
 					{% if page.url contains section.url %}
+						<span class="log">page.url contains section.url</span>
 						{% assign active = true %}
 					{% elsif section.alts %}
+						<span class="log">section.alts = {{ section.alts }}</span>
 						{% for alt in section.alts | split:"," %}
+							<span class="log">alt = {{ alt }}</span>
 							{% if page.url contains alt %}
 								{% assign active = true %}
+								<span class="log">page.url contains {{ alt }}</span>
 							{% endif %}
 						{% endfor %}
 					{% endif %}
