@@ -10,8 +10,6 @@ twitter_username:
 github_username: FRC4131
 source: _pages
 sections:
-- text: Home
-  url: /
 - text: Blog
   url: /blog
 - text: Calendar

@@ -14,7 +14,7 @@
 		<div id="wrapper">
 			<nav id="sidebar">
 				{% for section in site.sections %}
-					<a href="{{ site.baseurl }}{{ section.url }}" {% if page.url contains section.url %}class="active"{% endif %}>{{ section.text }}</a>
+					<a href="{{ site.baseurl }}{{ section.url }}" {% if page.url contains section.url %} class="active" {% endif %}>{{ section.text }}</a>
 				{% endfor %}
 			</nav>
 			<div id="content" {% if page.align %}style="text-align:{{ page.align }}"{% endif %}>
