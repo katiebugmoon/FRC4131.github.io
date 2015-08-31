@@ -22,7 +22,7 @@
 						{% assign active = true %}
 					{% elsif section.alts %}
 						<span class="log">section.alts = {{ section.alts }}</span>
-						{% for alt in section.alts | split:"," %}
+						{% for alt in section.alts | split: "," %}
 							<span class="log">alt = {{ alt }}</span>
 							{% if page.url contains alt %}
 								{% assign active = true %}
