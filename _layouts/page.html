@@ -13,22 +13,21 @@
 		</div>
 		<div id="wrapper">
 			<nav id="sidebar">
-				{% assign rootDir = page.url | remove_first: '/' | split: '/' | first | remove: '.html' %}{% comment %}Isolate first directory, or file name w/o extension{% endcomment %}
-				<span class="log">rootDir = {{ rootDir }}</span>
+				{% assign root = page.url | remove_first: '/' | split: '/' | first | remove: '.html' %}{% comment %}Isolate first directory, or file name w/o extension{% endcomment %}
+				<span class="log">Page root = {{ root }}</span>
 				{% for section in site.sections %}
+					<span class="log">Section {{ section.url }}</span>
 					{% assign active = false %}
-					<span class="log">section.url = {{ section.url }}</span>
-					{% if rootDir == section.url %}
-						{% assign active = true %}
-						<span class="log">Root dir matches</span>
+					{% if root == section.url %}
+						<span class="log">Matched on URL</span>
 					{% elsif section.alts %}
-						<span class="log">section.alts = {{ section.alts }}</span>
+						<span class="log">Alts: {{ section.alts }}</span>
 						{% assign alts = section.alts | split: ',' %}
 						{% for alt in alts %}
-							<span class="log">alt = {{ alt }}</span>
-							{% if rootDir == alt %}
+							<span class="log">Alt {{ alt }}</span>
+							{% if root == alt %}
+								<span class="log">Matched on alt</span>
 								{% assign active = true %}
-								<span class="log">Alt matches</span>
 							{% endif %}
 						{% endfor %}
 					{% endif %}
