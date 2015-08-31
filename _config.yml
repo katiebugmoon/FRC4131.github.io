@@ -10,21 +10,24 @@ twitter_username:
 github_username: FRC4131
 source: _pages
 sections:
+- text: Home
+  url: /
+  alts: index
 - text: Blog
-  url: /blog
-  alts: /2014,/2015
+  url: blog
+  alts: 2014,2015,2016
 - text: Calendar
-  url: /calendar
+  url: calendar
 - text: About Us
-  url: /about
+  url: about
 - text: What is FIRST Robotics?
-  url: /first
+  url: first
 - text: Contact Us
-  url: /contact
+  url: contact
 - text: Media
-  url: /media
+  url: media
 - text: Sponsors
-  url: /sponsorship
+  url: sponsorship
 
 # Build settings
 markdown: kramdown

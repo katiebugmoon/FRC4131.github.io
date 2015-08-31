@@ -14,12 +14,12 @@
 		<div id="wrapper">
 			<nav id="sidebar">
 				<span class="log">page.url = {{ page.url }}</span>
-				{% assign rootDir = page.url | remove_first: '/' | split: '/' | first | remove: 'index' | remove: '.html' %}{% comment %}Isolate first directory, or file name w/o index, or empty string for index{% endcomment %}
+				{% assign rootDir = page.url | remove_first: '/' | split: '/' | first | remove: '.html' %}{% comment %}Isolate first directory, or file name w/o extension{% endcomment %}
 				<span class="log">rootDir = {{ rootDir }}</span>
 				{% for section in site.sections %}
 					{% assign active = false %}
 					<span class="log">section.url = {{ section.url }}</span>
-					{% if page.url contains section.url %}
+					{% if rootDir == section.url %}
 						<span class="log">page.url contains section.url</span>
 						{% assign active = true %}
 					{% elsif section.alts %}
@@ -27,7 +27,7 @@
 						{% assign alts = section.alts | split: ',' %}
 						{% for alt in alts %}
 							<span class="log">alt = {{ alt }}</span>
-							{% if page.url contains alt %}
+							{% if rootDir == alt %}
 								{% assign active = true %}
 								<span class="log">page.url contains {{ alt }}</span>
 							{% endif %}
