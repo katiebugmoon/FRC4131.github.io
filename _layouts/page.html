@@ -1,19 +1,24 @@
 <html>
 	{% include head.html %}
 	<body>
-		<div id="header">
-			<img id="logo" src="{{ site.baseurl }}/res/img/logo.png"/>
-			<h1 id="title">Iron Patriots</h1>
-			<h3 id="tagline">FRC Team 4131 from Liberty High School</h3>
+		<div id="header-wrapper">
+			<div id="filler"></div>
+			<div id="header">
+				<img id="logo" src="{{ site.baseurl }}/res/img/logo.png"/>
+				<div id="header-text">
+					<h1 id="title">Iron Patriots</h1>
+					<h3 id="tagline">FRC Team 4131 from Liberty High School</h3>
+				</div>
+			</div>
 		</div>
-		<div style="width:100%; height:90%;">
-			<div id="sidebar">
+		<div id="wrapper">
+			<nav id="sidebar">
 				<!-- <a href="/blog">Blog</a> -->
 				{% for section in site.sections %}
 					<a href="{{ site.baseurl }}{{ section.url }}">{{ section.text }}</a>
 				{% endfor %}
-			</div>
-			<div id="content-wrapper">
+			</nav>
+			<div id="content" {% if page.align %}style="text-align:{{ page.align }}"{% endif %}>
 				{{ content }}
 			</div>
 		</div>
