@@ -15,7 +15,7 @@ sections:
   alts: index
 - text: Blog
   url: blog
-  alts: 2014,2015,2016
+  alts: 2014;2015;2016
 - text: Calendar
   url: calendar
 - text: About Us
