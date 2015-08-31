@@ -27,11 +27,11 @@
 						{% endfor %}
 					{% endif %}
 					{% if section.url contains '://' %}
-						{% capture href %}{{ section.url}}{% else %}{% endcapture %}
+						{% assign href = section.url %}
 					{% else %}
-						{% capture href %}{{ site.baseurl }}/{{ section.url }}{% endcapture %}
+						{% assign href = site.baseurl | append: '/' | append: section.url %}
 					{% endif %}
-					<a href="href"{% if active %} class="active"{% endif %}>{{ section.text }}</a>
+					<a href="{{ href }}"{% if active %} class="active"{% endif %}>{{ section.text }}</a>
 				{% endfor %}
 			</nav>
 			<div id="content" {% if page.align %}style="text-align:{{ page.align }}"{% endif %}>
