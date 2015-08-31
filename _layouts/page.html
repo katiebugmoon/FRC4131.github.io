@@ -14,7 +14,7 @@
 		<div id="wrapper">
 			<nav id="sidebar">
 				<span class="log">page.url = {{ page.url }}</span>
-				{% assign rootDir = page.url | split: '/' | first %}
+				{% assign rootDir = page.url | remove_first: '/' | split: '/' | first %}{% comment %}Trim the leading slash and isolate the first of the directories after that{% endcomment %}
 				<span class="log">rootDir = {{ rootDir }}</span>
 				{% for section in site.sections %}
 					{% assign active = false %}
