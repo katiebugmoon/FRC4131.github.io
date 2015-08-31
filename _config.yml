@@ -28,6 +28,10 @@ sections:
   url: media
 - text: Sponsors
   url: sponsorship
+- text: YouTube
+  url: https://www.youtube.com/channel/UC4yU-32WIU4Czi8nTdSphrQ
+- text: Github
+  url: https://github.com/FRC4131
 
 # Build settings
 markdown: kramdown

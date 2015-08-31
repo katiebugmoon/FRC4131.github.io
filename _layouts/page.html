@@ -26,7 +26,8 @@
 							{% endif %}
 						{% endfor %}
 					{% endif %}
-					<a href="{{ site.baseurl }}/{{ section.url }}" {% if active %}class="active"{% endif %}>{{ section.text }}</a>
+					{% capture href %}{% if section.url contains '://' %}{{ section.url}}{% else %}{{ site.baseurl }}/{{ section.url }}{% endcapture %}
+					<a href="href"{% if active %} class="active"{% endif %}>{{ section.text }}</a>
 				{% endfor %}
 			</nav>
 			<div id="content" {% if page.align %}style="text-align:{{ page.align }}"{% endif %}>
