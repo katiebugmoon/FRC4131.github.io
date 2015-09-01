@@ -28,10 +28,11 @@
 					{% endif %}
 					{% if section.url contains '://' %}
 						{% assign href = section.url %}
+						{% assign target = "_blank" %}
 					{% else %}
 						{% assign href = site.baseurl | append: '/' | append: section.url %}
 					{% endif %}
-					<a href="{{ href }}"{% if active %} class="active"{% endif %}>{{ section.text }}</a>
+					<a href="{{ href }}"{% if active %} class="active"{% endif %}{% if target %} target="{{ target }}"{% endif %}>{{ section.text }}</a>
 				{% endfor %}
 			</nav>
 			<div id="content" {% if page.align %}style="text-align:{{ page.align }}"{% endif %}>
