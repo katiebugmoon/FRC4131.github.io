@@ -1,7 +1,6 @@
 ---
 layout: post
 title: End of Auburn Mountainview
-date: 2015-02-28
 author: Ian Weiss
 ---
 This post is to commemorate the conclusion of our first competition, at Auburn Mountainview. We didn't make it to finals, and ended in 27th of 31, which is nothing to really celebrate about.
