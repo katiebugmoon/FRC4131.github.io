@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Git Ready for Github!
-date: 2015-04-11
 author: Ian Weiss
 ---
 Puns aside, our team is going to make a large push to migrate everything to Github over the next year. [The website](/) is already here, media is coming across slowly, software has been here for the past year, and even hardware (in the form of CAD) is being experimentally brought across. There are some pros and cons to Github, although you will quickly see how greatly the former outweighs the latter.
