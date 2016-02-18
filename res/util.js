@@ -12,6 +12,8 @@ function startsWith(string, substr){
 
 //Setup: <input class='copy' type='text' readonly value='This is the text to copy'/> <span class='copybtn'>(Copy text)</span>
 $('.copy').each(function(){//Resize text fields to match their contents
+	console.log(this);
+	console.log($(this).val());
 	$(this).attr('size', $(this).val().length);
 });
 $('.copybtn').on('click', function(event){//Copy buttons
