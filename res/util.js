@@ -11,15 +11,17 @@ function startsWith(string, substr){
 }
 
 //Setup: <input class='copy' type='text' readonly value='This is the text to copy'/> <span class='copybtn'>(Copy text)</span>
-console.log('Hi!');
-$('.copy').each(function(){//Resize text fields to match their contents
-	console.log(this);
-	console.log($(this).val());
-	$(this).attr('size', $(this).val().length);
-});
-$('.copybtn').on('click', function(event){//Copy buttons
-	$(this).prev('.copy').get(0).select();//Get the text field, and select all of the text it contains
-	var result = document.execCommand('copy');//Simulate a Ctrl-C (copies the selected text, which is set in the previous line)
-	if(result) console.log('Copied successfully');
-	else console.log('Copy failed');
+$(document).ready(function(){
+	console.log('Hello!');
+	$('.copy').each(function(){//Resize text fields to match their contents
+		console.log(this);
+		console.log($(this).val());
+		$(this).attr('size', $(this).val().length);
+	});
+	$('.copybtn').on('click', function(event){//Copy buttons
+		$(this).prev('.copy').get(0).select();//Get the text field, and select all of the text it contains
+		var result = document.execCommand('copy');//Simulate a Ctrl-C (copies the selected text, which is set in the previous line)
+		if(result) console.log('Copied successfully');
+		else console.log('Copy failed');
+	});
 });
