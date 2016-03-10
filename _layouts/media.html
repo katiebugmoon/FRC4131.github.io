@@ -9,11 +9,22 @@ stylesheet: media
 <table id="link-table"></table><!--This will be populated by JavaScript with all of the images to show.-->
 <script type="text/javascript">
 //Media utility functions
-function ytIcon(id){return "https://img.youtube.com/vi/" + id + "/0.jpg";}
-function ytEmbed(id){return "https://www.youtube.com/embed/" + id + "?autoplay=0";}
-function vimeoEmbed(id){return "https://player.vimeo.com/video/" + id;}
-function ytObject(id, caption){return {src: ytEmbed(id), icon: ytIcon(id), href: "", caption: caption};}
-function vimeoObject(id, icon, caption){return {src: vimeoEmbed(id), icon: icon, href: "", caption: caption};}
+function youtube(id, caption){
+	return {
+		src: "https://www.youtube.com/embed/" + id + "?autoplay=0",
+		icon: "https://img.youtube.com/vi/" + id + "/0.jpg",
+		href: "",
+		caption: caption
+	};
+}
+function vimeo(id, iconURL, caption){
+	return {
+		src: "https://player.vimeo.com/video/" + id,
+		icon: iconURL,
+		href: "",
+		caption: caption
+	};
+}
 //Media items (per year)
 {{ content }}
 //Media setup
