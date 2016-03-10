@@ -7,8 +7,72 @@ stylesheet: media
 	<p id="caption"></p>
 </div><br/>
 <table id="link-table"></table><!--This will be populated by JavaScript with all of the images to show.-->
-<script type="text/javascript" src="{{ site.baseurl }}/res/media_util.js"></script>
 <script type="text/javascript">
-	{{ content }}
+//Media utility functions
+function ytIcon(id){return "https://img.youtube.com/vi/" + id + "/0.jpg";}
+function ytEmbed(id){return "https://www.youtube.com/embed/" + id + "?autoplay=0";}
+function vimeoEmbed(id){return "https://player.vimeo.com/video/" + id;}
+function ytObject(id, caption){return {src: ytEmbed(id), icon: ytIcon(id), href: "", caption: caption};}
+function vimeoObject(id, icon, caption){return {src: vimeoEmbed(id), icon: icon, href: "", caption: caption};}
+//Media items (per year)
+{{ content }}
+//Media setup
+var ALPHA_HIGH = 1.0, ALPHA_MEDIUM = 0.7, ALPHA_LOW = 0.4;
+var NUM_IMAGES = images.length;
+$(document).ready(function(){
+	var table = $("#link-table");
+	for(var i=0;i<NUM_IMAGES;){
+		var start=i;
+		var row = $("<tr></tr>");
+		for(;(i-start)<8 && i<NUM_IMAGES;i++){
+			var img = $("<td data-index='" + i + "'><img src='" + (images[i].icon || images[i].src) + "'/></td>");
+			img.click(function(){
+				fadeOut($(".selected"));
+				fadeIn($(this));
+			});
+			img.mouseenter(function(){
+				if(!$(this).hasClass("selected"))
+					$(this).fadeTo("slow", ALPHA_MEDIUM);
+			});
+			img.mouseleave(function(){
+				if(!$(this).hasClass("selected"))
+					$(this).fadeTo("slow", ALPHA_LOW);
+			});
+			row.append(img);
+		}
+		table.append(row);
+	}
+	var imgs = $("#link-table td"), first = imgs.first();
+	fadeOut(imgs.not(first));
+	fadeIn(first);
+});
+function fadeIn(img){
+	img.toggleClass("selected", true);
+	img.fadeTo("slow", ALPHA_HIGH);
+	$("#main-wrapper").fadeTo("fast", 0, function(){
+		var ind = parseInt(img.attr("data-index"));
+		var src = images[ind].src;
+		if($("#main").tagName() == "img"){
+			console.log("img");
+			if(startsWith(src, "http")){
+				$("#main").replaceTag("iframe");
+				console.log("-->iframe");
+			}
+		}else{
+			console.log("iframe");
+			if(!startsWith(src, "http")){
+				$("#main").replaceTag("img");
+				console.log("-->img");
+			}
+		}
+		$("#main").attr("src", src);
+		$("#main-link").attr("href", images[ind].href || images[ind].src);
+		$("#caption").html(images[ind].caption);
+		$("#main-wrapper").fadeTo("fast", 1);
+	});
+}
+function fadeOut(img){
+	img.toggleClass("selected", false);
+	img.fadeTo("slow", ALPHA_LOW);
+}
 </script>
-<script type="text/javascript" src="{{ site.baseurl }}/res/media.js"></script>
