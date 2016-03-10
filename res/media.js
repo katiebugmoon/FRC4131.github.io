@@ -6,7 +6,7 @@ $(document).ready(function(){
 		var start=i;
 		var row = $("<tr></tr>");
 		for(;(i-start)<8 && i<NUM_IMAGES;i++){
-			var img = $("<td data-index='" + i + "'><img src='" + images[i].icon || images[i].src + "'/></td>");
+			var img = $("<td data-index='" + i + "'><img src='" + (images[i].icon || images[i].src) + "'/></td>");
 			img.click(function(){
 				fadeOut($(".selected"));
 				fadeIn($(this));
