@@ -2,7 +2,18 @@
 layout: media
 title: 2016 Media
 ---
-var srcIcon = ["text.jpg", ytIcon("N-2PYZL4w2o"), "lasercut.jpg", "tread.jpg", "protobase.jpg", "software.jpg", "speedtest.jpg", "robot.jpg", "stands.jpg", "andrew.jpg", "driveteam.jpg", "lunch.jpg", "team.jpg"];
-var srcMain = ["text.jpg", ytEmbed("N-2PYZL4w2o"), "lasercut.jpg", "tread.jpg", "protobase.jpg", "software.jpg", "speedtest.jpg", "robot.jpg", "stands.jpg", "andrew.jpg", "driveteam.jpg", "lunch.jpg", "team.jpg"];
-var href = ["quotes.html", "", "lasercut.jpg", "tread.jpg", "protobase.jpg", "software.jpg", "speedtest.jpg", "robot.jpg", "stands.jpg", "andrew.jpg", "driveteam.jpg", "lunch.jpg", "team.jpg"];
-var captions = ["Click the image to read some quotes from build season.", "A time-lapse of build season day 8.", "Our laser-cutter working on a prototype of the tread frame.", "A fully assembled tread. One more to go!", "This is the full frame size of our robot. We already found problems in the CAD from this prototype.", "Chris enigmatically explains Java concepts to the new software members.", "Doug and Andrew record the speed of the launcher flywheels. Our launcher maxes out at 6,000 RPM!", "Our robot at the Auburn Mountainview district competition.", "Our team at Auburn Mountainview.", "Andrew shows off the robot.", "Our drive team on the field.", "Our team at lunch. Alliance selections await!", "Our team after the Auburn Mountainview district competition. We placed in the semifinals, and were honored with the Excellence in Engineering Award!"];
+var images = [
+	{src: "text.jpg", href: "quotes.html", caption: "Click the image to read some quotes from build season."},
+	{src: ytEmbed("N-2PYZL4w2o"), icon: ytIcon("N-2PYZL4w2o"), href: "", caption: "A time-lapse of build season day 8."},
+	{src: "lasercut.jpg", caption: "Our laser cutter working on a prototype of the tread frame."},
+	{src: "tread.jpg", caption: "A fully assembled tread. One more to go!"},
+	{src: "protobase.jpg", caption: "This is the full frame size of our robot. We already found and fixed CAD problems using this prototype."},
+	{src: "software.jpg", caption: "Chris enigmatically explains Java concepts to the new software members."}
+	{src: "speedtest.jpg", caption: "Doug and Andrew record the speed of the launcher flywheels. Our launcher maxes out at 6,000 RPM!"},
+	{src: "robot.jpg", caption: "Our robot at the Auburn Mountainview district competition."},
+	{src: "stands.jpg", caption: "Our team at Auburn Mountainview."},
+	{src: "andrew.jpg", caption: "Andrew shows off the robot."},
+	{src: "driveteam.jpg", caption: "Our drive team on the field."},
+	{src: "lunch.jpg", caption: "Our team at lunch. Alliance selections await!"},
+	{src: "team.jpg", caption: "Our team after the Auburn Mountainview district competition. We placed in the semifinals, and were honored with the Excellence in Engineering Award!"}
+];
