@@ -11,7 +11,10 @@ iframe#main{width: 600px;}
 }
 #main-link{display: inline;}
 #caption{display: inline-block;}
-#link-table{border-collapse: collapse;}
+#link-table{
+	border-collapse: collapse;
+	margin: 0 auto;/*Center*/
+}
 #link-table td{
 	border: 1px solid black;
 	width: 90px;
