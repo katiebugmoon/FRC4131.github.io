@@ -32,6 +32,8 @@ sections:
   url: https://www.youtube.com/channel/UCKCnSeP8sVShMKy-3DvHs6A
 - text: Github
   url: https://github.com/FRC4131
+- text: Resources
+  url: resources
 
 # Build settings
 markdown: kramdown
