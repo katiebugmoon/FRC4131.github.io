@@ -2,15 +2,14 @@
 $(function(){
 	var scores = {};
 	$('#quotes').children().each(function(){
+		console.log(this, $(this).children('i').get(0));
 		var names = $(this).children('i').text().split(', ');
 		names.splice(names.length-1, 1);
 		for(var i=0; i<names; ++i){
 			if(quotes[names[i]]) quotes[names[i]]++;
 			else quotes[names[i]] = 1;
 		}
-		console.log(names);
 	});
-	console.log(scores);
 	var scoreArr = [];
 	for(var name in quotes){
 		scoreArr.push({name: name, value: scores[name]});
