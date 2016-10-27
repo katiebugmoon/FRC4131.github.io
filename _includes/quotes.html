@@ -5,11 +5,11 @@ $(function(){
 		var names = $(this).children('i').text().split(', ');
 		names.splice(names.length-1, 1);
 		if(names.length == 1 && names[0].contains('and')) names = names[0].split('and');
-		console.log(names);
 		for(var i=0; i<names; ++i){
 			var name = names[i].replace('and', '').replace(/\([^\)]+\)/, '').trim();
 			if(scores[name]) scores[name]++;
 			else scores[name] = 1;
+			console.log(name, scores[name]);
 		}
 	});
 	console.log(scores);
@@ -20,6 +20,7 @@ $(function(){
 	scoreArr.sort(function(a, b){
 		return b.value - a.value;//Sort descending on score
 	});
+	console.log(scoreArr);
 	var rankings = $('#rankings');
 	for(var i=0; i<scoreArr.length; ++i){
 		$('<li>').text(scoreArr[i].name + ': ' + scoreArr.value).appendTo(rankings);
