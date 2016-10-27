@@ -11,6 +11,7 @@ $(function(){
 	});
 	var scoreArr = [];
 	for(var name in quotes){
+		console.log(name);
 		scoreArr.push({name: name, value: scores[name]});
 	}
 	scoreArr.sort(function(a, b){
