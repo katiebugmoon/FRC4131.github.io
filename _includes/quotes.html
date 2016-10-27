@@ -8,7 +8,7 @@ $(function(){
 		if(names.length == 1 && names[0].contains('and')) names = names[0].split('and');
 		for(var i=0; i<names; ++i){
 			var name = names[i].replace('and', '').replace(/\([^\)]+\)/, '').trim();
-			if(quotes[name) quotes[name]++;
+			if(quotes[name]) quotes[name]++;
 			else quotes[name] = 1;
 		}
 	});
