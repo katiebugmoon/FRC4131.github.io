@@ -1,8 +1,8 @@
 <script>
 $(function(){
 	var scores = {};
-	$('#quotes').children().each(function(el){
-		var names = $(el).children('i').text().split(', ');
+	$('#quotes').children().each(function(){
+		var names = $(this).children('i').text().split(', ');
 		names.splice(names.length-1, 1);
 		for(var i=0; i<names; ++i){
 			if(quotes[names[i]]) quotes[names[i]]++;
