@@ -5,7 +5,7 @@ $(function(){
 		var names = $(this).children('i').text().split(', ');
 		names.splice(names.length-1, 1);
 		if(names.length == 1 && names[0].contains('and')) names = names[0].split('and');
-		for(var i=0; i<names; ++i){
+		for(var i=0; i<names.length; ++i){
 			var name = names[i].replace('and', '').replace(/\([^\)]+\)/, '').trim();
 			if(scores[name]) scores[name]++;
 			else scores[name] = 1;
