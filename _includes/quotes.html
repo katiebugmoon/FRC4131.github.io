@@ -1,0 +1,24 @@
+<script>
+$(function(){
+	var scores = {};
+	$('#quotes').children().each(function(el){
+		var names = $(el).children('i').text().split(', ');
+		names.splice(names.length-1, 1);
+		for(var i=0; i<names; ++i){
+			if(quotes[names[i]]) quotes[names[i]]++;
+			else quotes[names[i]] = 1;
+		}
+	});
+	var scoreArr = [];
+	for(var name in quotes){
+		scoreArr.push({name: name, value: scores[name]});
+	}
+	scoreArr.sort(function(a, b){
+		return b.value - a.value;//Sort descending on score
+	});
+	var rankings = $('#rankings');
+	for(var i=0; i<scoreArr.length; ++i){
+		$('<li>').text(scoreArr[i].name + ': ' + scoreArr.value).appendTo(rankings);
+	}
+});
+</script>
