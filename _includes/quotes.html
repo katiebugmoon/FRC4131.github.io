@@ -23,7 +23,7 @@ $(function(){
 	console.log(scoreArr);
 	var rankings = $('#rankings');
 	for(var i=0; i<scoreArr.length; ++i){
-		$('<li>').text(scoreArr[i].name + ': ' + scoreArr.value).appendTo(rankings);
+		$('<li>').text(scoreArr[i].name + ': ' + scoreArr[i].value).appendTo(rankings);
 	}
 });
 </script>
