@@ -5,9 +5,11 @@ $(function(){
 		console.log(this, $(this).children('i').get(0));
 		var names = $(this).children('i').text().split(', ');
 		names.splice(names.length-1, 1);
+		if(names.length == 1 && names[0].contains('and')) names = names[0].split('and');
 		for(var i=0; i<names; ++i){
-			if(quotes[names[i]]) quotes[names[i]]++;
-			else quotes[names[i]] = 1;
+			var name = names[i].replace('and', '').replace(/\([^\)]+\)/, '').trim();
+			if(quotes[name) quotes[name]++;
+			else quotes[name] = 1;
 		}
 	});
 	var scoreArr = [];
