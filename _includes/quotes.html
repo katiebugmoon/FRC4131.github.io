@@ -6,7 +6,7 @@ $(function(){
 		names.splice(names.length-1, 1);
 		if(names.length == 1 && names[0].contains('and')) names = names[0].split('and');
 		for(var i=0; i<names.length; ++i){
-			var name = names[i].replace('and', '').replace(/\([^\)]+\)/, '').trim();
+			var name = names[i].replace('and', '').replace(/\([^\)]+\)/, '').replace(/to \w+/, '').trim();
 			if(scores[name]) scores[name]++;
 			else scores[name] = 1;
 			console.log(name, scores[name]);
@@ -18,7 +18,9 @@ $(function(){
 		scoreArr.push({name: name, value: scores[name]});
 	}
 	scoreArr.sort(function(a, b){
-		return b.value - a.value;//Sort descending on score
+		var comparison;
+		if((comparison = b.value - a.value) != 0) return comparison;
+		else return a.name.localeCompare(b.name);
 	});
 	console.log(scoreArr);
 	var rankings = $('#rankings');
