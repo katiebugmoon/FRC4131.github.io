@@ -9,6 +9,9 @@ jQuery.fn.tagName = function(){return this.prop("tagName").toLowerCase();};
 function startsWith(string, substr){
 	return string.lastIndexOf(substr, 0) === 0;
 }
+String.prototype.contains = function(substr){
+	return this.indexOf(substr) > -1;
+}
 
 //Setup: <input class='copy' type='text' readonly value='This is the text to copy'/> <span class='copybtn'>(Copy text)</span>
 $(document).ready(function(){
