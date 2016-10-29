@@ -3,8 +3,8 @@ var countdownDate = new Date(2017, 0, 7);
 $(function(){
 	var delta = countdownDate.getTime() - Date.now();
 	var ms = delta;
-	var s = Math.floor(ms / 100);
-	ms %= 100;
+	var s = Math.floor(ms / 1000);
+	ms %= 1000;
 	var m = Math.floor(s / 60);
 	s %= 60;
 	var h = Math.floor(m / 60);
