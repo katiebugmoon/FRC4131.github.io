@@ -1,15 +1,20 @@
-var countdownTarget = 'Kickoff 2017';
-var countdownDate = new Date(2017, 0, 7);
-$(function(){
-	var delta = countdownDate.getTime() - Date.now();
-	var ms = delta;
-	var s = Math.floor(ms / 1000);
-	ms %= 1000;
-	var m = Math.floor(s / 60);
-	s %= 60;
-	var h = Math.floor(m / 60);
-	m %= 60;
-	var d = Math.floor(h / 24);
-	h %= 24;
-	console.log(new Date(Date.now()), Date.now(), countdownDate, countdownDate.getTime(), delta, d, h, m, s, ms);
-});
+(function(name, date){
+	$(function(){
+		window.setInterval(function(){
+			var milliseconds = date.getTime() - Date.now();
+			var seconds = Math.floor(milliseconds / 1000);
+			milliseconds %= 1000;
+			var minutes = Math.floor(seconds / 60);
+			seconds %= 60;
+			var hours = Math.floor(minutes / 60);
+			minutes %= 60;
+			var days = Math.floor(hours / 24);
+			hours %= 24;
+			
+			if(days) $('#countdown').text(days + ' days to ' + name);
+			else if(hours) $('#countdown').text(hours + ' hours to ' + name + '!');
+			else if(minutes) $('#countdown').text(hours + ' minutes to ' + name + '!!');
+			else $('#countdown').text(seconds + ' SECONDS TO ' + name + '!!!');
+		}, 1000);
+	});
+})('Kickoff 2017', new Date(2017, 0, 7));
