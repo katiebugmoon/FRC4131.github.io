@@ -11,5 +11,5 @@ $(function(){
 	m %= 60;
 	var d = Math.floor(h / 24);
 	h %= 24;
-	console.log(Date.now(), countdownDate, countdownDate.getTime(), delta, d, h, m, s, ms);
+	console.log(new Date(Date.now()), Date.now(), countdownDate, countdownDate.getTime(), delta, d, h, m, s, ms);
 });
