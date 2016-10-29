@@ -25,4 +25,4 @@
 		else if(seconds) return seconds + ' seconds';
 		else return message;
 	}
-})('Kickoff 2017', 1, 7, 2016, 7, 0, 'Welcome to Build Season 2017!');
+})('Kickoff 2017', 1, 7, 2017, 7, 0, 'Welcome to Build Season 2017!');
