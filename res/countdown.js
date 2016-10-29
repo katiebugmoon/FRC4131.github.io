@@ -24,4 +24,4 @@
 		else return seconds + ' seconds';
 	}
 // })('Kickoff 2017', 1, 7, 2016, 7, 0);
-})('Kickoff 2017', 10, 29, 2016, 16, 21);
+})('Kickoff 2017', 10, 29, 2016, 16, 32);
