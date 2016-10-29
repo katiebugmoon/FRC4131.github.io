@@ -57,4 +57,4 @@ body{
 }
 .log{display: none !important;}
 .copybtn{cursor: pointer;}
-#countdown{float: right;}
+#countdown{position: fixed; right: 0; left: 0;}

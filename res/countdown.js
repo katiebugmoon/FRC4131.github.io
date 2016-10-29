@@ -1,4 +1,5 @@
-(function(name, date){
+(function(name, m, d, y, h, mn){
+	var date = new Date(y, m-1, d, h, mn, 0);//Months are the only 0-index field here. WHYYY!?
 	$(function(){
 		window.setInterval(function(){
 			var milliseconds = date.getTime() - Date.now();
@@ -11,10 +12,16 @@
 			var days = Math.floor(hours / 24);
 			hours %= 24;
 			
-			if(days) $('#countdown').text(days + ' days to ' + name);
-			else if(hours) $('#countdown').text(hours + ' hours to ' + name + '!');
-			else if(minutes) $('#countdown').text(hours + ' minutes to ' + name + '!!');
-			else $('#countdown').text(seconds + ' SECONDS TO ' + name + '!!!');
+			var newText = text(days, hours, minutes, seconds), oldText = $('#countdown').text();
+			if(newText != oldText) $('#countdown').text(newText);
 		}, 1000);
 	});
-})('Kickoff 2017', new Date(2017, 0, 7));
+	
+	function text(days, hours, minutes, seconds){
+		if(days) return days + ' days';
+		else if(hours) return hours + ' hours';
+		else if(minutes) return minutes + ' minutes';
+		else return seconds + ' seconds';
+	}
+// })('Kickoff 2017', 1, 7, 2016, 7, 0);
+})('Kickoff 2017', 10, 29, 2016, 16, 15);
