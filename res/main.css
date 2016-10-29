@@ -57,3 +57,4 @@ body{
 }
 .log{display: none !important;}
 .copybtn{cursor: pointer;}
+#countdown{float: right;}
