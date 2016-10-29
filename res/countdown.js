@@ -1,4 +1,4 @@
-(function(name, m, d, y, h, mn){
+(function(name, m, d, y, h, mn, message){
 	var date = new Date(y, m-1, d, h, mn, 0);//Months are the only 0-index field here. WHYYY!?
 	$(function(){
 		window.setInterval(function(){
@@ -22,7 +22,7 @@
 		if(days) return days + ' days';
 		else if(hours) return hours + ' hours';
 		else if(minutes) return minutes + ' minutes';
-		else return seconds + ' seconds';
+		else if(seconds) return seconds + ' seconds';
+		else return message;
 	}
-// })('Kickoff 2017', 1, 7, 2016, 7, 0);
-})('Kickoff 2017', 10, 29, 2016, 16, 44);
+})('Kickoff 2017', 1, 7, 2016, 7, 0, 'Welcome to Build Season 2017!');
