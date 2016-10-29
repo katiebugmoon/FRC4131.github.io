@@ -12,7 +12,7 @@
 			var days = Math.floor(hours / 24);
 			hours %= 24;
 			
-			var newText = text(days, hours, minutes, seconds), oldText = $('#countdown').text();
+			var newText = text(days, hours, minutes, seconds) + ' to ' + name, oldText = $('#countdown').text();
 			if(newText != oldText) $('#countdown').text(newText);
 		}, 1000);
 	});
@@ -24,4 +24,4 @@
 		else return seconds + ' seconds';
 	}
 // })('Kickoff 2017', 1, 7, 2016, 7, 0);
-})('Kickoff 2017', 10, 29, 2016, 16, 32);
+})('Kickoff 2017', 10, 29, 2016, 16, 42);
