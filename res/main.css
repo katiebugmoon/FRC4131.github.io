@@ -21,9 +21,9 @@ body{
 	background: #BBB;
 }
 /*Template Aesthetics Formatting*/
-#header{background: linear-gradient(180deg, blue 80%, transparent 100%);}
-#filler{background: linear-gradient(180deg, blue 80%, transparent 100%), linear-gradient(90deg, blue 70%, transparent 100%);}/*Connect sidebar and header gradients*/
-#sidebar{background: linear-gradient(90deg, blue 70%, transparent 100%);}
+#header{background: linear-gradient(180deg, #000842 80%, transparent 100%);}
+#filler{background: linear-gradient(180deg, #000842 80%, transparent 100%), linear-gradient(90deg, #000842 70%, transparent 100%);}/*Connect sidebar and header gradients*/
+#sidebar{background: linear-gradient(90deg, #000842 70%, transparent 100%);}
 #header{text-align: center;}
 #logo{
 	display: inline;
@@ -49,7 +49,7 @@ body{
 	padding-bottom: 1em;
 	background: transparent;
 }
-#sidebar > a:hover, #sidebar > a.active{background: linear-gradient(90deg, green 70%, transparent 100%);}
+#sidebar > a:hover, #sidebar > a.active{background: linear-gradient(90deg, #1AC300 70%, transparent 100%);}
 #sidebar > a:active{background: linear-gradient(90deg, gray 70%, transparent 100%);}
 #content{
 	text-align: center;
