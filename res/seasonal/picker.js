@@ -18,6 +18,8 @@
 			el.setAttribute('rel', 'stylesheet');
 			el.setAttribute('type', 'text/css');
 			el.setAttribute('href', urlPrefix + holiday.file);
+			console.log('Picked holiday', holiday.file)
+			document.head.appendChild(el);
 		}
 	}
 })([{
