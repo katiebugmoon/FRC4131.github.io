@@ -2,7 +2,7 @@
 ---
 (function(holidays){
 	var urlPrefix = '{{ site.baseurl }}/res/seasonal/';
-	Date now = new Date();
+	var now = new Date();
 	var month = now.getMonth() + 1, day = now.getDate();
 	for(var i=holidays.length-1; i>=0; --i){
 		var holiday = holidays[i];
