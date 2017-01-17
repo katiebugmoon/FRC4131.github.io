@@ -4,6 +4,7 @@
 	var urlPrefix = '{{ site.baseurl }}/res/seasonal/';
 	var now = new Date();
 	var month = now.getMonth() + 1, day = now.getDate();
+	console.log('Now is', month, day);
 	for(var i=holidays.length-1; i>=0; --i){
 		var holiday = holidays[i];
 		var afterStart = month >= holiday.start[0] && day >= holiday.start[1],
@@ -20,7 +21,9 @@
 			el.setAttribute('href', urlPrefix + holiday.file);
 			console.log('Picked holiday', holiday.file)
 			document.head.appendChild(el);
+			return;
 		}
+		console.log('No holiday');
 	}
 })([{
 	'start': [10, 1],
