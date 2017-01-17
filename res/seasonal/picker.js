@@ -31,6 +31,7 @@
 	'file': 'halloween.css'
 }, {
 	'start': [12, 1],
-	'end': [1, 7],
+	// 'end': [1, 7],
+	'end': [1, 31],
 	'file': 'firstmas.css'
 }]);
