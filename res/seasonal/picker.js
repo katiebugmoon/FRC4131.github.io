@@ -29,11 +29,11 @@
 	console.log('No holiday');
 })([{
 	'start': [10, 1],
-	'end': [10, 31],
+	// 'end': [10, 31],
+	'end': [2, 1],
 	'file': 'halloween.css'
 }, {
 	'start': [12, 1],
-	// 'end': [1, 7],
-	'end': [1, 31],
+	'end': [1, 7],
 	'file': 'firstmas.css'
 }]);
