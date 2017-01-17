@@ -13,7 +13,7 @@
 		console.log(holiday.file, afterStart, beforeEnd);
 		
 		var inRange;
-		if(holiday.start[0] < holiday.end[0]) inRange = afterStart || beforeEnd;//Across years (e.g. December into January)
+		if(holiday.start[0] > holiday.end[0]) inRange = afterStart || beforeEnd;//Across years (e.g. December into January)
 		else inRange = afterStart && beforeEnd;//Within one year
 		
 		if(inRange){
