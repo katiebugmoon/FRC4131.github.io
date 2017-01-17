@@ -10,6 +10,8 @@
 		var afterStart = month >= holiday.start[0] && day >= holiday.start[1],
 			beforeEnd = month <= holiday.end[0] && day <= holiday.end[1];
 		
+		console.log(holiday.file, afterStart, beforeEnd);
+		
 		var inRange;
 		if(holiday.start[0] < holiday.end[0]) inRange = afterStart || beforeEnd;//Across years (e.g. December into January)
 		else inRange = afterStart && beforeEnd;//Within one year
@@ -23,8 +25,8 @@
 			document.head.appendChild(el);
 			return;
 		}
-		console.log('No holiday');
 	}
+	console.log('No holiday');
 })([{
 	'start': [10, 1],
 	'end': [10, 31],
