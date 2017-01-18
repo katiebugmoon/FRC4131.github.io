@@ -14,6 +14,7 @@ body{
 	vertical-align: top;
 	padding-left: 0.5em;
 	padding-top: 0.5em;
+	padding-bottom: 10em;
 }
 #logo, #header-text{height: 80%;}/*Last full-blue color stop in gradient*/
 #header-text{overflow: hidden;}
