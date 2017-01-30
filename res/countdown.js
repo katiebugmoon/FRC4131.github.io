@@ -1,5 +1,5 @@
-(function(name, m, d, y, h, mn, message){
-	var date = new Date(y, m-1, d, h, mn, 0);//Months are the only 0-index field here. WHYYY!?
+(function(name, m, d, y, h, mn, s, message){
+	var date = new Date(y, m-1, d, h, mn, s);//Months are the only 0-index field here. WHYYY!?
 	$(function(){
 		window.setInterval(function(){
 			var milliseconds = date.getTime() - Date.now();
@@ -19,10 +19,10 @@
 	});
 	
 	function text(days, hours, minutes, seconds){
-		if(days) return days + ' days';
-		else if(hours) return hours + ' hours';
-		else if(minutes) return minutes + ' minutes';
-		else if(seconds) return seconds + ' seconds';
+		if(days > 0) return days + ' days';
+		else if(hours > 0) return hours + ' hours';
+		else if(minutes > 0) return minutes + ' minutes';
+		else if(seconds > 0) return seconds + ' seconds';
 		else return message;
 	}
-})('Kickoff 2017', 1, 7, 2017, 7, 0, 'Welcome to Build Season 2017!');
+})('Bag & Tag 2017', 2, 21, 2017, 11, 59, 59, 'See you at the Competition!');
